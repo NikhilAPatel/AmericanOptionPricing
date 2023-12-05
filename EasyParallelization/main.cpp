@@ -4,6 +4,7 @@
 #include <cmath>
 #include <algorithm>
 #include <iostream>
+#include <omp.h>
 #include <chrono>
 #include <queue>
 #include <unistd.h>
@@ -124,36 +125,55 @@ std::vector<double> american_option_pricing(std::vector<std::vector<double>>& SS
 
 int main(int argc, char* argv[]){
     //Parameters
-    double sigma = 1.0;  // Stock volatility
+    double sigma = 0.2;  // Stock volatility
     double S0 = 80.0;  // Initial stock price
     double r = 0.04;  // Risk-free interest rate
     double D = 0.0;  // Dividend yield
     double T = 1;  // to maturity
-    double KP = 160.0;  // Strike price
+    double KP = 100.0;  // Strike price
     double dt = 1.0 / 50;  // Time step size
     int N = int(T / dt);  // Number of time steps
-    int NSim = 1000;  // Default number of simulation paths (can be overridden through command line)
 
-    // Read NSim if provided
+    int NSim = 1000;
+    int numThreads = 8;
+
+
     if (argc > 1) {
-        NSim = std::atoi(argv[1]);
+        numThreads = std::atoi(argv[1]);  // Override number of threads if provided
+        if (argc > 2) {
+            NSim = std::atoi(argv[2]);  // Override number of simulations if provided
+        }
     }
 
+    int sims_per_thread = NSim / numThreads;
+
+    omp_set_num_threads(numThreads);
+    std::vector<std::vector<double>> all_results(numThreads);  // Vector to store results from each thread
+
     auto start = std::chrono::high_resolution_clock::now();
+    #pragma omp parallel
+    {
+        int thread_id = omp_get_thread_num();
+        std::vector<std::vector<double>> SSit = simulate_stock_prices(S0, sigma, r, D, dt, N, sims_per_thread);
+        std::vector<double> result = american_option_pricing(SSit, KP, r, dt, N, sims_per_thread);
+        all_results[thread_id] = result;
+    }
 
-    std::vector<std::vector<double>> SSit = simulate_stock_prices(S0, sigma, r, D, dt, N, NSim);
+    // Aggregate results from all threads
+    std::vector<double> aggregated_results;
+    for (const auto& thread_result : all_results) {
+        aggregated_results.insert(aggregated_results.end(), thread_result.begin(), thread_result.end());
+    }
 
-    std::vector<double> result = american_option_pricing(SSit, KP, r, dt, N, NSim);
+    double price = std::accumulate(aggregated_results.begin(), aggregated_results.end(), 0.0)/NSim;
+    double stderror = calculateStandardError(aggregated_results);
 
     auto stop = std::chrono::high_resolution_clock::now();
 
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
 
-    double price = std::accumulate(result.begin(), result.end(), 0.0)/NSim;
-    double stderror = calculateStandardError(result);
-
     cout << "Price: " << price <<", Standard Error: " << stderror << endl;
-    cout << "Time taken: " << duration.count() << " milliseconds for " <<NSim<<" iterations"<< endl;
+    cout << "Time taken: " << duration.count() << " milliseconds for " <<NSim<<" iterations with "<<omp_get_max_threads()<< " threads"<< endl;
 
     return 0;
 }

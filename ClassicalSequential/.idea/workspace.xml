@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="ClassicalSequential" targetName="ClassicalSequential" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="222ceaa4-6b01-442b-995f-83c79d43ff7f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/AutoManager.dir/CXX.includecache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/AutoManager.dir/depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/Progress/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/Progress/count.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ClassicalSequential.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/Cholesky" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/CholmodSupport" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/Core" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/Dense" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/Eigen" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/Eigenvalues" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/Geometry" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/Householder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/IterativeLinearSolvers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/Jacobi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/KLUSupport" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/LU" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/MetisSupport" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/OrderingMethods" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/PaStiXSupport" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/PardisoSupport" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/QR" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/QtAlignedMalloc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/SPQRSupport" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/SVD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/Sparse" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/SparseCholesky" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/SparseCore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/SparseLU" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/SparseQR" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/StdDeque" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/StdList" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/StdVector" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/SuperLUSupport" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/UmfPackSupport" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Cholesky/LDLT.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Cholesky/LLT.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Cholesky/LLT_LAPACKE.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/CholmodSupport/CholmodSupport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/ArithmeticSequence.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Array.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/ArrayBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/ArrayWrapper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Assign.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/AssignEvaluator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Assign_MKL.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/BandMatrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Block.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/BooleanRedux.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/CommaInitializer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/ConditionEstimator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/CoreEvaluators.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/CoreIterators.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/CwiseBinaryOp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/CwiseNullaryOp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/CwiseTernaryOp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/CwiseUnaryOp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/CwiseUnaryView.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/DenseBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/DenseCoeffsBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/DenseStorage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Diagonal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/DiagonalMatrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/DiagonalProduct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Dot.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/EigenBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/ForceAlignedAccess.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Fuzzy.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/GeneralProduct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/GenericPacketMath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/GlobalFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/IO.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/IndexedView.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Inverse.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Map.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/MapBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/MathFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/MathFunctionsImpl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Matrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/MatrixBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/NestByValue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/NoAlias.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/NumTraits.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/PartialReduxEvaluator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/PermutationMatrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/PlainObjectBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Product.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/ProductEvaluators.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Random.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Redux.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Ref.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Replicate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Reshaped.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/ReturnByValue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Reverse.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Select.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/SelfAdjointView.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/SelfCwiseBinaryOp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Solve.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/SolveTriangular.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/SolverBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/StableNorm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/StlIterators.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Stride.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Swap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Transpose.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Transpositions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/TriangularMatrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/VectorBlock.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/VectorwiseOp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/Visitor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AVX/Complex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AVX/MathFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AVX/PacketMath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AVX/TypeCasting.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AVX512/Complex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AVX512/MathFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AVX512/PacketMath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AVX512/TypeCasting.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AltiVec/Complex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AltiVec/MathFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AltiVec/MatrixProduct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AltiVec/MatrixProductCommon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AltiVec/MatrixProductMMA.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/AltiVec/PacketMath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/CUDA/Complex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/Default/BFloat16.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/Default/ConjHelper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/Default/Half.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/Default/Settings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/Default/TypeCasting.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/GPU/MathFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/GPU/PacketMath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/GPU/TypeCasting.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/HIP/hcc/math_constants.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/MSA/Complex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/MSA/MathFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/MSA/PacketMath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/NEON/Complex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/NEON/GeneralBlockPanelKernel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/NEON/MathFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/NEON/PacketMath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/NEON/TypeCasting.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/SSE/Complex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/SSE/MathFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/SSE/PacketMath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/SSE/TypeCasting.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/SVE/MathFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/SVE/PacketMath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/SVE/TypeCasting.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/SYCL/InteropHeaders.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/SYCL/MathFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/SYCL/PacketMath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/SYCL/SyclMemoryModel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/SYCL/TypeCasting.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/ZVector/Complex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/ZVector/MathFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/arch/ZVector/PacketMath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/functors/AssignmentFunctors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/functors/BinaryFunctors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/functors/NullaryFunctors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/functors/StlFunctors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/functors/TernaryFunctors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/functors/UnaryFunctors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/GeneralBlockPanelKernel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/GeneralMatrixMatrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/GeneralMatrixMatrix_BLAS.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/GeneralMatrixVector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/GeneralMatrixVector_BLAS.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/Parallelizer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/SelfadjointMatrixMatrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/SelfadjointMatrixMatrix_BLAS.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/SelfadjointMatrixVector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/SelfadjointMatrixVector_BLAS.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/SelfadjointProduct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/SelfadjointRank2Update.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/TriangularMatrixMatrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/TriangularMatrixMatrix_BLAS.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/TriangularMatrixVector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/TriangularMatrixVector_BLAS.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/TriangularSolverMatrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/TriangularSolverMatrix_BLAS.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/products/TriangularSolverVector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/BlasUtil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/ConfigureVectorization.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/Constants.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/DisableStupidWarnings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/ForwardDeclarations.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/IndexedViewHelper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/IntegralConstant.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/MKL_support.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/Macros.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/Memory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/Meta.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/NonMPL2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/ReenableStupidWarnings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/ReshapedHelper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/StaticAssert.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/SymbolicIndex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Core/util/XprHelper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/ComplexEigenSolver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/ComplexSchur.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/ComplexSchur_LAPACKE.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/EigenSolver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/HessenbergDecomposition.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/RealQZ.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/RealSchur.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/RealSchur_LAPACKE.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Eigenvalues/Tridiagonalization.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/AlignedBox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/AngleAxis.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/EulerAngles.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/Homogeneous.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/Hyperplane.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/OrthoMethods.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/ParametrizedLine.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/Quaternion.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/Rotation2D.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/RotationBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/Scaling.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/Transform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/Translation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/Umeyama.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Geometry/arch/Geometry_SIMD.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Householder/BlockHouseholder.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Householder/Householder.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Householder/HouseholderSequence.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/Jacobi/Jacobi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/KLUSupport/KLUSupport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/LU/Determinant.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/LU/FullPivLU.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/LU/InverseImpl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/LU/PartialPivLU.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/LU/PartialPivLU_LAPACKE.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/LU/arch/InverseSize4.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/MetisSupport/MetisSupport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/OrderingMethods/Amd.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/OrderingMethods/Eigen_Colamd.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/OrderingMethods/Ordering.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/PaStiXSupport/PaStiXSupport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/PardisoSupport/PardisoSupport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/QR/ColPivHouseholderQR.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/QR/ColPivHouseholderQR_LAPACKE.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/QR/CompleteOrthogonalDecomposition.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/QR/FullPivHouseholderQR.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/QR/HouseholderQR.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/QR/HouseholderQR_LAPACKE.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SPQRSupport/SuiteSparseQRSupport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SVD/BDCSVD.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SVD/JacobiSVD.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SVD/JacobiSVD_LAPACKE.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SVD/SVDBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SVD/UpperBidiagonalization.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCholesky/SimplicialCholesky.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/AmbiVector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/CompressedStorage.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/MappedSparseMatrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseAssign.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseBlock.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseColEtree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseCompressedBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseCwiseBinaryOp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseCwiseUnaryOp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseDenseProduct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseDiagonalProduct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseDot.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseFuzzy.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseMap.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseMatrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseMatrixBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparsePermutation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseProduct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseRedux.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseRef.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseSelfAdjointView.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseSolverBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseSparseProductWithPruning.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseTranspose.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseTriangularView.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseUtil.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseVector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/SparseView.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseCore/TriangularSolver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLUImpl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_Memory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_Structs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_Utils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_column_bmod.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_column_dfs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_gemm_kernel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_kernel_bmod.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_panel_bmod.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_panel_dfs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_pivotL.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_pruneL.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseLU/SparseLU_relax_snode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SparseQR/SparseQR.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/StlSupport/StdDeque.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/StlSupport/StdList.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/StlSupport/StdVector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/StlSupport/details.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/SuperLUSupport/SuperLUSupport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/UmfPackSupport/UmfPackSupport.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/misc/Image.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/misc/Kernel.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/misc/RealSvd2x2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/misc/blas.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/misc/lapack.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/misc/lapacke.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/misc/lapacke_mangling.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/plugins/ArrayCwiseBinaryOps.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/plugins/ArrayCwiseUnaryOps.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/plugins/BlockMethods.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/plugins/CommonCwiseBinaryOps.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/plugins/CommonCwiseUnaryOps.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/plugins/IndexedViewMethods.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/plugins/MatrixCwiseBinaryOps.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/plugins/MatrixCwiseUnaryOps.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eigen/src/plugins/ReshapedMethods.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdCXX/CMakeCXXCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/CXX.includecache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/main.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/ClassicalSequential" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/ClassicalSequential.cbp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/AutoManager.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/AutoManager.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/main" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ManagerWorker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ManagerWorker/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2Z8ekgg6MqYuIFPeCrMM3X8lagx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassicalSequential" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClassicalSequential" TARGET_NAME="ClassicalSequential" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ClassicalSequential" RUN_TARGET_NAME="ClassicalSequential">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="222ceaa4-6b01-442b-995f-83c79d43ff7f" name="Changes" comment="" />
+      <created>1701808277546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701808277546</updated>
+      <workItem from="1701808279298" duration="2513000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

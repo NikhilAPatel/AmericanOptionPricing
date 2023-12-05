@@ -1,4 +1,4 @@
-# Install script for directory: /Users/nikhil/Documents/Code/EE587/Term/ClassicalSequential
+# Install script for directory: /Users/nikhil/Documents/Code/AmericanOptionPricing/ClassicalSequential
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/nikhil/Documents/Code/EE587/Term/ClassicalSequential/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/nikhil/Documents/Code/AmericanOptionPricing/ClassicalSequential/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

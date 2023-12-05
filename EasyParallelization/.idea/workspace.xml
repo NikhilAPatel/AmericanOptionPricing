@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ef6cd48-9314-4f2f-bfdb-896550a41bde" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../AutoManager/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/AutoManager.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/AutoManager.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/AutoManager.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/AutoManager.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/AutoManager.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/AutoManager.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/AutoManager.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/AutoManager.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/AutoManager.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/AutoManager.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/ClassicalSequential.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/ClassicalSequential" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/ClassicalSequential" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/ClassicalSequential.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/ClassicalSequential.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Z8mKMcTIoLrdQDhtW4gzsXdUNZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EasyParallelization" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="EasyParallelization" TARGET_NAME="EasyParallelization" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="EasyParallelization" RUN_TARGET_NAME="EasyParallelization">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ef6cd48-9314-4f2f-bfdb-896550a41bde" name="Changes" comment="" />
+      <created>1701812015187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701812015187</updated>
+      <workItem from="1701812016824" duration="1000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

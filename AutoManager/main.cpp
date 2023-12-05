@@ -180,19 +180,17 @@ void regression_worker(std::vector<std::vector<std::pair<int, double>>>& dataQue
 void adjustThreadRoles(int simsCompleted, int regsCompleted){
     double ratio = simsCompleted / (double)std::max(1, regsCompleted);
 
-    if (ratio > 3) {
+    if (ratio > 7) {
         // Too many simulations, increase regressors
         numSimulators = std::max(1, numSimulators - 1); // Decrease simulator count
     } else {
         // Too few simulations, decrease regressors
         numSimulators = std::min(numSimulators+1, omp_get_max_threads()); // Increase simulator count
     }
-
 }
 
 std::vector<double> runSimulation(double S0, double sigma, double r, double dt, double D, int N, double KP, int NSim){
     omp_set_nested(1); //Allows each parallel section below to spawn their own threads
-    omp_set_num_threads(32);
 
     std::vector<double> results;
     std::vector<std::vector<std::pair<int, double>>> dataQueue(N);
@@ -238,22 +236,27 @@ std::vector<double> runSimulation(double S0, double sigma, double r, double dt, 
 
 int main(int argc, char* argv[]){
     //Parameters
-    double sigma = 1.0;  // Stock volatility
+    double sigma = 0.2;  // Stock volatility
     double S0 = 80.0;  // Initial stock price
     double r = 0.04;  // Risk-free interest rate
     double D = 0.0;  // Dividend yield
     double T = 1;  // to maturity
-    double KP = 160.0;  // Strike price
+    double KP = 100.0;  // Strike price
     double dt = 1.0 / 50;  // Time step size
     int N = int(T / dt);  // Number of time steps
-    int NSim = 100000;  // Default number of simulation paths (can be overridden through command line)
 
-    // Read NSim if provided
+    int NSim = 1000;
+    int numThreads = 8;
+
+
     if (argc > 1) {
-        NSim = std::atoi(argv[1]);
+        numThreads = std::atoi(argv[1]);  // Override number of threads if provided
+        if (argc > 2) {
+            NSim = std::atoi(argv[2]);  // Override number of simulations if provided
+        }
     }
 
-    cout<<NSim<<endl;
+    omp_set_num_threads(numThreads);
 
     auto start = std::chrono::high_resolution_clock::now();
 

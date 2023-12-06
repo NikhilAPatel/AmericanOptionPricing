@@ -87,6 +87,8 @@ void process_path(double S0, double sigma, double r, double dt, double D, int N,
     std::vector<double> value_matrix(N, 0.0);
     value_matrix.back() = payoff.back();
 
+    double payoff_if_exercise_immediately = payoff[0];
+
     for (int t = N - 2; t > 0; --t) { //TODO not sure if this should be t>0 or t>=0 (when >=, we get a lot of prices to be 9 exactly in the first index, which suggests something fishy)
         bool in_the_money = SSit[t] < KP;
         if (in_the_money) {
@@ -128,7 +130,7 @@ void process_path(double S0, double sigma, double r, double dt, double D, int N,
             }
         }
     }
-    double price = *std::max_element(value_matrix.begin(), value_matrix.end());
+    double price = std::max(*std::max_element(value_matrix.begin(), value_matrix.end()), payoff_if_exercise_immediately);
 
     #pragma omp critical
     {

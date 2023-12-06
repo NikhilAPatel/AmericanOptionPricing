@@ -63,6 +63,7 @@ std::vector<double> american_option_pricing(std::vector<std::vector<double>>& SS
             payoff_matrix[sim][t] = std::max(KP - SSit[sim][t], 0.0);  // Calculating payoff for each timestep
         }
     }
+    double payoff_if_exercise_immediately = payoff_matrix[0][0];
 
     // Initialize the value_matrix with the payoffs at the final timestep
     for (int sim = 0; sim < NSim; ++sim) {
@@ -116,7 +117,7 @@ std::vector<double> american_option_pricing(std::vector<std::vector<double>>& SS
 //            cout<<v<<", ";
 //        }
 //        cout<<endl;
-        discounted_present_values.push_back(*std::max_element(value_matrix[sim].begin(), value_matrix[sim].end()));
+        discounted_present_values.push_back(std::max(*std::max_element(value_matrix[sim].begin(), value_matrix[sim].end()), payoff_if_exercise_immediately));
     }
 
     return discounted_present_values; // Return the mean as the estimated option value

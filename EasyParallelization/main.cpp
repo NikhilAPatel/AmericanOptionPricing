@@ -129,9 +129,9 @@ int main(int argc, char* argv[]){
     double S0 = 80.0;  // Initial stock price
     double r = 0.04;  // Risk-free interest rate
     double D = 0.0;  // Dividend yield
-    double T = 1;  // to maturity
+    double T = 2;  // to maturity
     double KP = 100.0;  // Strike price
-    double dt = 1.0 / 50;  // Time step size
+    double dt = 1.0 / 250;  // Time step size
     int N = int(T / dt);  // Number of time steps
 
     int NSim = 1000;
@@ -172,8 +172,9 @@ int main(int argc, char* argv[]){
 
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
 
-    cout << "Price: " << price <<", Standard Error: " << stderror << endl;
-    cout << "Time taken: " << duration.count() << " milliseconds for " <<NSim<<" iterations with "<<omp_get_max_threads()<< " threads"<< endl;
+    cout<<"Easy Parallelization"<<endl;
+    cout<< price << endl;
+    cout << duration.count() << " ms"<< endl;
 
     return 0;
 }

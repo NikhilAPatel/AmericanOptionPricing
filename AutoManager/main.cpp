@@ -72,7 +72,7 @@ std::vector<double> simulate_stock_path(double S0, double sigma, double r, doubl
 }
 
 // process_path function
-void process_path(double S0, double sigma, double r, double dt, double D, int N, double KP, int P, int NSimulators, std::vector<double>& results, std::vector<std::vector<std::pair<int, double>>>& dataQueue, std::vector<std::vector<double>>& coefficientsMap) {
+void process_path(double S0, double sigma, double r, double dt, double D, int N, double KP, int P, int NSimulators, std::vector<double>& results, std::vector<std::vector<std::pair<double, double>>>& dataQueue, std::vector<std::vector<double>>& coefficientsMap) {
     int simsCompleted = 0;
 
     //Initialize stuff needed for random number generation
@@ -141,9 +141,9 @@ void process_path(double S0, double sigma, double r, double dt, double D, int N,
     }
 }
 
-void regression_worker(std::vector<std::vector<std::pair<int, double>>>& dataQueue, std::vector<std::vector<double>>& coefficientsMap, std::priority_queue<Timestep, std::vector<Timestep>, CompareTimestep>& pq, int regression_timestep){
+void regression_worker(std::vector<std::vector<std::pair<double, double>>>& dataQueue, std::vector<std::vector<double>>& coefficientsMap, std::priority_queue<Timestep, std::vector<Timestep>, CompareTimestep>& pq, int regression_timestep){
     int timestep;
-    std::vector<std::pair<int, double>> training_data;
+    std::vector<std::pair<double, double>> training_data;
 
     //Get timestep from priority queue and
     //Grabbing data from shared queue
@@ -162,6 +162,11 @@ void regression_worker(std::vector<std::vector<std::pair<int, double>>>& dataQue
 
     for (size_t i = 0; i < training_data.size(); ++i) {
         double x = training_data[i].first;
+//        X(i, 0) = 1;      // X
+//        X(i, 1) = x;      // X
+//        X(i, 2) = x * x;  // X^2
+//        X(i, 3) = x * x * x;  // X^3
+
         X(i, 0) = x;      // X
         X(i, 1) = x * x;  // X^2
         X(i, 2) = x * x * x;  // X^3
@@ -197,7 +202,7 @@ std::vector<double> runSimulation(double S0, double sigma, double r, double dt, 
     omp_set_nested(1); //Allows each parallel section below to spawn their own threads
 
     std::vector<double> results;
-    std::vector<std::vector<std::pair<int, double>>> dataQueue(N);
+    std::vector<std::vector<std::pair<double, double>>> dataQueue(N);
     std::vector<std::vector<double>> coefficientsMap(N);
 
     std::priority_queue<Timestep, std::vector<Timestep>, CompareTimestep> pq;

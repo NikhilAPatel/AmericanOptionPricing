@@ -11,6 +11,7 @@
 #include <atomic>
 #include "Eigen/Dense"
 
+
 using std::cout;
 using std::endl;
 
@@ -59,6 +60,7 @@ std::vector<double> simulate_stock_path(double S0, double sigma, double r, doubl
     std::mt19937 gen(rd());
     std::normal_distribution<> d(0, 1);
 
+
     std::vector<double> path(N);
     path[0] = S0;
     for (int i = 1; i < N; ++i) {
@@ -94,7 +96,7 @@ void process_path(double S0, double sigma, double r, double dt, double D, int N,
         if (in_the_money) {
             // With probability 1/P, send data to the global queue
             if (distribution(generator) < 1.0 / NSimulators) {
-                double discounted_value = value_matrix[t + 1] * exp(-r);
+                double discounted_value = value_matrix[t + 1] * exp(-r*dt);
                 #pragma omp critical
                 {
                     dataQueue[t].emplace_back(SSit[t], discounted_value);
@@ -182,7 +184,7 @@ void regression_worker(std::vector<std::vector<std::pair<int, double>>>& dataQue
 void adjustThreadRoles(int simsCompleted, int regsCompleted){
     double ratio = simsCompleted / (double)std::max(1, regsCompleted);
 
-    if (ratio > 7) {
+    if (ratio > 1) {
         // Too many simulations, increase regressors
         numSimulators = std::max(1, numSimulators - 1); // Decrease simulator count
     } else {
@@ -239,12 +241,12 @@ std::vector<double> runSimulation(double S0, double sigma, double r, double dt, 
 int main(int argc, char* argv[]){
     //Parameters
     double sigma = 0.2;  // Stock volatility
-    double S0 = 80.0;  // Initial stock price
-    double r = 0.04;  // Risk-free interest rate
+    double S0 = 36.0;  // Initial stock price
+    double r = 0.06;  // Risk-free interest rate
     double D = 0.0;  // Dividend yield
-    double T = 2;  // to maturity
-    double KP = 100.0;  // Strike price
-    double dt = 1.0 / 250;  // Time step size
+    double T = 1;  // to maturity
+    double KP = 40.0;  // Strike price
+    double dt = 1.0 / 50;  // Time step size
     int N = int(T / dt);  // Number of time steps
 
     int NSim = 1000;

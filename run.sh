@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the number of threads and simulations as variables
-NUM_THREADS=8
+NUM_THREADS=32
 NUM_SIMULATIONS=10000
 
 # File to store output
@@ -31,14 +31,14 @@ echo "" >> "$output_file"
 # EasyParallelization
 echo "Processing EasyParallelization..."
 cd EasyParallelization
-g++-13 -o main -fopenmp main.cpp && ./main $NUM_THREADS >> "../$output_file"
+g++-13 -o main -fopenmp main.cpp && ./main $NUM_THREADS $NUM_SIMULATIONS >> "../$output_file"
 cd ..
 echo "" >> "$output_file"
 
 # HybridParallelization
 echo "Processing HybridParallelization..."
 cd HybridParallelization
-g++-13 -o main -fopenmp main.cpp && ./main >> "../$output_file"
+g++-13 -o main -fopenmp main.cpp && ./main  $NUM_THREADS $NUM_SIMULATIONS >> "../$output_file"
 cd ..
 echo "" >> "$output_file"
 

@@ -128,12 +128,12 @@ std::vector<double> american_option_pricing(std::vector<std::vector<double>>& SS
 int main(int argc, char* argv[]){
     //Parameters
     double sigma = 0.2;  // Stock volatility
-    double S0 = 80.0;  // Initial stock price
-    double r = 0.04;  // Risk-free interest rate
+    double S0 = 36.0;  // Initial stock price
+    double r = 0.06;  // Risk-free interest rate
     double D = 0.0;  // Dividend yield
-    double T = 2;  // to maturity
-    double KP = 100.0;  // Strike price
-    double dt = 1.0 / 250;  // Time step size
+    double T = 1;  // to maturity
+    double KP = 40.0;  // Strike price
+    double dt = 1.0 / 50;  // Time step size
     int N = int(T / dt);  // Number of time steps
 
     int NSim = 1000;

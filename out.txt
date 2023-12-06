@@ -1,18 +1,18 @@
-Running 10000 simulations with 8 threads...
+Running 10000 simulations with 32 threads...
 
 AutoManager
-20.4132
-782 ms
+4.39322
+62 ms
 
 Classical Sequential
-20.4635
-4961 ms
+4.44362
+248 ms
 
 Easy Parallelization
-20.4107
-87 ms
+4.43014
+40 ms
 
 Hybrid
-20.4827
-312 ms
+4.42697
+220 ms
 

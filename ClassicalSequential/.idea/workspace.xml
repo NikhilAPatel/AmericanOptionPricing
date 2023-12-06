@@ -12,16 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="222ceaa4-6b01-442b-995f-83c79d43ff7f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../AutoManager/main" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutoManager/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EasyParallelization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyParallelization/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EasyParallelization/main" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyParallelization/main" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EasyParallelization/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyParallelization/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HybridParallelization/main" beforeDir="false" afterPath="$PROJECT_DIR$/../HybridParallelization/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HybridParallelization/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../HybridParallelization/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

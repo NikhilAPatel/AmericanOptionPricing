@@ -10,16 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ef6cd48-9314-4f2f-bfdb-896550a41bde" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../AutoManager/main" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutoManager/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../AutoManager/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ClassicalSequential/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/main" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ClassicalSequential/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ClassicalSequential/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HybridParallelization/main" beforeDir="false" afterPath="$PROJECT_DIR$/../HybridParallelization/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HybridParallelization/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../HybridParallelization/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

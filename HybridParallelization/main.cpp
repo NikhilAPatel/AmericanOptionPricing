@@ -101,7 +101,7 @@ std::vector<double> american_option_pricing_2_dims(std::vector<std::vector<doubl
         Eigen::VectorXd coefficients = matrixX.householderQr().solve(vectorY);
 
         // Iterate through each path
-#pragma omp parallel for num_threads(numThreads)
+        #pragma omp parallel for num_threads(numThreads)
         for (int sim = 0; sim < NSim; ++sim) {
             double max_stock_price = std::max(SSit1[sim][t], SSit2[sim][t]);
             if (max_stock_price < KP) {

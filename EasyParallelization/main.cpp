@@ -229,20 +229,22 @@ int main(int argc, char* argv[]){
         }
     }
 
+    auto start = std::chrono::high_resolution_clock::now();
+
+
     int sims_per_thread = NSim / numThreads;
 
     omp_set_num_threads(numThreads);
     std::vector<std::vector<double>> all_results(numThreads);  // Vector to store results from each thread
 
-    auto start = std::chrono::high_resolution_clock::now();
+
     #pragma omp parallel
     {
         int thread_id = omp_get_thread_num();
 
+        //Simulate stock paths and run simulations
         std::vector<std::vector<double>> SSit = simulate_stock_prices(S0, sigma, r, D, dt, N, sims_per_thread);
-        std::vector<std::vector<double>> SSit2 = simulate_stock_prices(S02, sigma2, r, D, dt, N, sims_per_thread);
-
-        std::vector<double> result = american_option_pricing_2_dims(SSit,SSit2, KP, r, dt, N, sims_per_thread);
+        std::vector<double> result = american_option_pricing(SSit, KP, r, dt, N, sims_per_thread);
         all_results[thread_id] = result;
     }
 

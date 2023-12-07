@@ -199,7 +199,7 @@ void regression_worker(std::vector<std::vector<std::tuple<double, double, double
 void adjustThreadRoles(int simsCompleted, int regsCompleted){
     double ratio = simsCompleted / (double)std::max(1, regsCompleted);
 
-    if (ratio > 1) {
+    if (ratio > 5) {
         // Too many simulations, increase regressors
         numSimulators = std::max(1, numSimulators - 1); // Decrease simulator count
     } else {

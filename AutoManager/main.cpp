@@ -132,9 +132,80 @@ void process_path(double S0, double sigma, double r, double dt, double D, int N,
             }
         }
     }
-    double price = std::max(*std::max_element(value_matrix.begin(), value_matrix.end()), payoff_if_exercise_immediately);
+//    double price = std::max(*std::max_element(value_matrix.begin(), value_matrix.end()), payoff_if_exercise_immediately);
+    double price = *std::max_element(value_matrix.begin(), value_matrix.end());
 
     #pragma omp critical
+    {
+        simsCompleted++;
+        results.emplace_back(price);
+    }
+}
+
+void process_path2(double S0, double sigma, double r, double dt, double D, int N, double KP, int P, int NSimulators, std::vector<double>& results, std::vector<std::vector<std::pair<double, double>>>& dataQueue, std::vector<std::vector<double>>& coefficientsMap) {
+    int simsCompleted = 0;
+
+    //Initialize stuff needed for random number generation
+    std::default_random_engine generator;
+    generator.seed(omp_get_thread_num());
+
+    std::uniform_real_distribution<double> distribution(0.0, 1.0);
+    std::normal_distribution<double> normaldistribution(0.0,1.0);
+
+    auto SSit = simulate_stock_path(S0, sigma, r, D, dt, N);
+
+    std::vector<double> payoff(N);
+    std::transform(SSit.begin(), SSit.end(), payoff.begin(), [KP](double s) { return std::max(KP - s, 0.0); });
+    std::vector<double> value_matrix(N, 0.0);
+    value_matrix.back() = payoff.back();
+
+    double payoff_if_exercise_immediately = payoff[0];
+
+    for (int t = N - 2; t > 0; --t) { //TODO not sure if this should be t>0 or t>=0 (when >=, we get a lot of prices to be 9 exactly in the first index, which suggests something fishy)
+        bool in_the_money = SSit[t] < KP;
+        if (in_the_money) {
+            // With probability 1/P, send data to the global queue
+            if (distribution(generator) < 1.0 / NSimulators) {
+                double discounted_value = value_matrix[t + 1] * exp(-r*dt);
+#pragma omp critical
+                {
+                    dataQueue[t].emplace_back(SSit[t], discounted_value);
+                }
+            }
+
+
+            std::vector<double> coefficients;
+
+            //Important: removing this critical section allows for linear scaling with p
+//                    #pragma omp critical
+//                    {
+//                        coefficients = get_regression_coefficients(t);
+//                        coefficients = {normaldistribution(generators[threadId]), normaldistribution(generators[threadId]),normaldistribution(generators[threadId]),normaldistribution(generators[threadId]),};
+            coefficients = coefficientsMap[t];
+//                    }
+
+
+
+            // Calculate continuation value
+            double continuation_value = 0.0;
+            for (size_t i = 0; i < coefficients.size(); ++i) {
+                continuation_value += coefficients[i] * std::pow(SSit[t], i);
+            }
+
+            double immediate_exercise_value = payoff[t];
+
+            // Decide whether to exercise
+            if (immediate_exercise_value > continuation_value) {
+                value_matrix[t] = immediate_exercise_value;
+                std::fill(value_matrix.begin() + t + 1, value_matrix.end(),
+                          0.0); // Zero out future values
+            }
+        }
+    }
+//    double price = std::max(*std::max_element(value_matrix.begin(), value_matrix.end()), payoff_if_exercise_immediately);
+    double price = *std::max_element(value_matrix.begin(), value_matrix.end());
+
+#pragma omp critical
     {
         simsCompleted++;
         results.emplace_back(price);
@@ -186,10 +257,10 @@ void regression_worker(std::vector<std::vector<std::pair<double, double>>>& data
     }
 }
 
-void adjustThreadRoles(int simsCompleted, int regsCompleted){
+void adjustThreadRoles(int simsCompleted, int regsCompleted, double optimalRatio){
     double ratio = simsCompleted / (double)std::max(1, regsCompleted);
 
-    if (ratio > 1) {
+    if (ratio > optimalRatio) {
         // Too many simulations, increase regressors
         numSimulators = std::max(1, numSimulators - 1); // Decrease simulator count
     } else {
@@ -198,7 +269,7 @@ void adjustThreadRoles(int simsCompleted, int regsCompleted){
     }
 }
 
-std::vector<double> runSimulation(double S0, double sigma, double r, double dt, double D, int N, double KP, int NSim){
+std::vector<double> runSimulation(double S0, double sigma, double r, double dt, double D, int N, double KP, int NSim, double optimalRatio){
     omp_set_nested(1); //Allows each parallel section below to spawn their own threads
 
     std::vector<double> results;
@@ -236,7 +307,7 @@ std::vector<double> runSimulation(double S0, double sigma, double r, double dt, 
 
             #pragma omp master
             {
-                adjustThreadRoles(simulationsCompleted, regression_timestep);
+                adjustThreadRoles(simulationsCompleted, regression_timestep, optimalRatio);
             }
         }
     }
@@ -246,11 +317,11 @@ std::vector<double> runSimulation(double S0, double sigma, double r, double dt, 
 int main(int argc, char* argv[]){
     //Parameters
     double sigma = 0.2;  // Stock volatility
-    double S0 = 36.0;  // Initial stock price
-    double r = 0.06;  // Risk-free interest rate
+    double S0 = 80.0;  // Initial stock price
+    double r = 0.04;  // Risk-free interest rate
     double D = 0.0;  // Dividend yield
     double T = 1;  // to maturity
-    double KP = 40.0;  // Strike price
+    double KP = 100.0;  // Strike price
     double dt = 1.0 / 50;  // Time step size
     int N = int(T / dt);  // Number of time steps
 
@@ -267,20 +338,30 @@ int main(int argc, char* argv[]){
 
     omp_set_num_threads(numThreads);
 
-    auto start = std::chrono::high_resolution_clock::now();
+    std::vector<double> optimalRations = {.5};
 
-    std::vector<double> result = runSimulation(S0, sigma, r, dt, D, N, KP, NSim);
+    cout<<"["<<endl;
 
-    auto stop = std::chrono::high_resolution_clock::now();
+    for(auto optimalRat: optimalRations){
+        auto start = std::chrono::high_resolution_clock::now();
 
-    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+        std::vector<double> result = runSimulation(S0, sigma, r, dt, D, N, KP, NSim, optimalRat);
 
-    double price = std::accumulate(result.begin(), result.end(), 0.0)/NSim;
-    double stderror = calculateStandardError(result);
+        auto stop = std::chrono::high_resolution_clock::now();
 
-    cout<<"AutoManager"<<endl;
-    cout<< price << endl;
-    cout << duration.count() << " ms"<< endl;
+        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+
+        double price = std::accumulate(result.begin(), result.end(), 0.0)/NSim;
+        double stderror = calculateStandardError(result);
+        cout<<price<<endl;
+        cout<<"("<<optimalRat<<", "<<((price-19.9924 )/19.9924 )*100.0<<", "<<duration.count()<<"),"<<endl;
+    }
+
+
+
+//    cout<<"AutoManager"<<endl;
+//    cout<< price << endl;
+//    cout << duration.count() << " ms"<< endl;
 
     return 0;
 }

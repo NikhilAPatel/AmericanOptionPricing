@@ -198,7 +198,8 @@ std::vector<double> american_option_pricing(std::vector<std::vector<double>>& SS
     // Calculating the option price
     std::vector<double> discounted_present_values;
     for (int sim = 0; sim < NSim; ++sim) {
-        discounted_present_values.push_back(std::max(*std::max_element(value_matrix[sim].begin(), value_matrix[sim].end()), payoff_if_exercise_immediately));
+//        discounted_present_values.push_back(std::max(*std::max_element(value_matrix[sim].begin(), value_matrix[sim].end()), payoff_if_exercise_immediately));
+        discounted_present_values.push_back(*std::max_element(value_matrix[sim].begin(), value_matrix[sim].end()));
     }
 
     return discounted_present_values; // Return the mean as the estimated option value
@@ -206,12 +207,12 @@ std::vector<double> american_option_pricing(std::vector<std::vector<double>>& SS
 
 int main(int argc, char* argv[]){
     //Parameters
-    double sigma = 0.2;  // Stock volatility
-    double S0 = 80.0;  // Initial stock price
-    double r = 0.04;  // Risk-free interest rate
+    double sigma = 0.4;  // Stock volatility
+    double S0 = 36.0;  // Initial stock price
+    double r = 0.06;  // Risk-free interest rate
     double D = 0.0;  // Dividend yield
-    double T = 1;  // to maturity
-    double KP = 100.0;  // Strike price
+    double T = 2;  // to maturity
+    double KP = 40.0;  // Strike price
     double dt = 1.0 / 50;  // Time step size
     int N = int(T / dt);  // Number of time steps
 
@@ -236,7 +237,7 @@ int main(int argc, char* argv[]){
     std::vector<std::vector<double>> SSit = simulate_stock_prices(S0, sigma, r, D, dt, N, NSim);
     std::vector<std::vector<double>> SSit2 = simulate_stock_prices(S02, sigma2, r, D, dt, N, NSim);
 
-    std::vector<double> result = american_option_pricing_2_dims(SSit, SSit2, KP, r, dt, N, NSim, numThreads);
+    std::vector<double> result = american_option_pricing(SSit, KP, r, dt, N, NSim, numThreads);
 
     auto stop = std::chrono::high_resolution_clock::now();
 
@@ -247,7 +248,9 @@ int main(int argc, char* argv[]){
 
     cout<<"Hybrid"<<endl;
     cout<< price << endl;
+    cout<<4.478 - price<<endl;
     cout << duration.count() << " ms"<< endl;
+    cout <<NSim<<" iterations with "<<numThreads<<" threads"<<endl;
 
     return 0;
 }

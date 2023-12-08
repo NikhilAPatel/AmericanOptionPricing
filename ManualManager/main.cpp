@@ -160,6 +160,8 @@ void regression_worker(std::vector<std::vector<std::pair<double, double>>>& data
         training_data = dataQueue[timestep];
     }
 
+    cout<<training_data.size()<<endl;
+
     // Setting up the matrices and vectors
     Eigen::MatrixXd X(training_data.size(), 3);
     Eigen::VectorXd Y(training_data.size());
@@ -246,7 +248,7 @@ std::vector<double> runSimulation(double S0, double sigma, double r, double dt, 
 int main(int argc, char* argv[]){
     //Parameters
     double sigma = 0.4;  // Stock volatility
-    double S0 = 44.0;  // Initial stock price
+    double S0 = 36.0;  // Initial stock price
     double r = 0.06;  // Risk-free interest rate
     double D = 0.0;  // Dividend yield
     double T = 2;  // to maturity
@@ -267,7 +269,7 @@ int main(int argc, char* argv[]){
 
     omp_set_num_threads(numThreads);
 
-    std::vector<int> tc = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+    std::vector<int> tc = {9};
 
     cout<<"["<<endl;
 
